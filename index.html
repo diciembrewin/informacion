@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Información Aérea Nacional – Colombia | Portal Informativo</title>
+
+  <meta name="description" content="Portal informativo y editorial sobre vuelos nacionales, aeropuertos y conectividad aérea en Colombia. Sitio sin reservas, pagos ni servicios comerciales.">
+
+  <meta name="robots" content="index,follow">
+
+  <!-- Política clara para Google -->
+  <meta name="google" content="nositelinkssearchbox">
+
+  <style>
+    :root{
+      --primary:#2563eb;
+      --dark:#020617;
+      --text:#0f172a;
+      --muted:#64748b;
+      --bg:#f8fafc;
+    }
+
+    *{
+      box-sizing:border-box;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    }
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    a{color:inherit;text-decoration:none}
+
+    header{
+      background:linear-gradient(135deg,#1e3a8a,#2563eb);
+      color:#fff;
+      padding:72px 0;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+      padding:24px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      margin-bottom:40px;
+    }
+
+    .logo{
+      width:48px;
+      height:48px;
+      background:#fff;
+      color:#2563eb;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      font-weight:900;
+      font-size:20px;
+    }
+
+    h1{
+      font-size:36px;
+      margin-bottom:16px;
+    }
+
+    .subtitle{
+      font-size:15px;
+      color:#dbeafe;
+      max-width:560px;
+    }
+
+    .card{
+      margin-top:40px;
+      background:#fff;
+      border-radius:20px;
+      padding:32px;
+      box-shadow:0 20px 40px rgba(0,0,0,.15);
+      max-width:520px;
+    }
+
+    .card h2{
+      color:#1e3a8a;
+      margin-bottom:12px;
+    }
+
+    .card p{
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:18px;
+    }
+
+    .btn{
+      display:block;
+      text-align:center;
+      padding:16px;
+      background:var(--primary);
+      color:#fff;
+      border-radius:16px;
+      font-weight:800;
+    }
+
+    footer{
+      background:var(--dark);
+      color:#cbd5e1;
+      text-align:center;
+      padding:32px 16px;
+      font-size:13px;
+    }
+
+    footer a{
+      text-decoration:underline;
+      cursor:pointer;
+    }
+
+    @media(max-width:768px){
+      h1{font-size:28px}
+    }
+  </style>
+
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17911151911"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17911151911');
+</script>
+  
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+
+    <div class="brand">
+      <div class="logo">✈️</div>
+      <div>
+        <strong>Información Aérea Nacional – Colombia</strong>
+        <div class="subtitle">
+          Portal editorial e informativo sobre conectividad aérea nacional
+        </div>
+      </div>
+    </div>
+
+    <h1>Información general sobre vuelos en Colombia</h1>
+
+    <p class="subtitle">
+      Contenido educativo sobre rutas aéreas, aeropuertos y transporte aéreo nacional.
+      Este sitio no realiza reservas, pagos ni ofrece servicios comerciales.
+    </p>
+
+    <div class="card">
+      <h2>Consultar información aérea</h2>
+      <p>
+        Accede a contenidos informativos y editoriales.
+        No solicitamos datos personales ni financieros.
+      </p>
+
+      <a href="of.html" class="btn">
+        Acceder al contenido informativo
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<footer>
+  <a onclick="document.getElementById('legal').style.display='block'">
+    Aviso legal y alcance del sitio
+  </a>
+
+  <p style="margin-top:12px">
+    © 2026 Información Aérea Nacional – Colombia
+  </p>
+</footer>
+
+<!-- AVISO LEGAL -->
+<div id="legal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);padding:20px">
+  <div style="background:#fff;max-width:800px;margin:40px auto;padding:28px;border-radius:18px">
+    <h3>Aviso Legal</h3>
+
+    <p><strong>Este sitio es exclusivamente informativo.</strong></p>
+
+    <ul>
+      <li>No realizamos reservas, pagos ni cotizaciones.</li>
+      <li>No solicitamos datos bancarios o financieros.</li>
+      <li>No representamos aerolíneas, agencias ni plataformas.</li>
+      <li>No ofrecemos servicios comerciales de ningún tipo.</li>
+    </ul>
+
+    <button class="btn" onclick="document.getElementById('legal').style.display='none'">
+      Cerrar
+    </button>
+  </div>
+</div>
+
+</body>
+</html>
