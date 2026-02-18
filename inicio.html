@@ -2,254 +2,215 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Volar360Colombia | Portal Informativo de Viajes</title>
+<title>360 Vuelas Más Hoy | Servicio Informativo en Viajes</title>
 
-<meta name="description" content="Portal web informativo independiente con contenido general sobre rutas y recomendaciones de viaje.">
+<meta name="description" content="360 Vuelas Más Hoy brinda orientación informativa sobre opciones de viaje. No vendemos boletos ni realizamos reservas.">
 <meta name="robots" content="index, follow">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-
 body{
-font-family:'Poppins',sans-serif;
-background:linear-gradient(180deg,#0a1a3a,#020617);
-color:#ffffff;
-line-height:1.6;
+  font-family:'Montserrat',sans-serif;
+  background:#0b0f1f;
+  color:#fff;
+  line-height:1.6;
 }
-
 header{
-position:fixed;
-top:0;
-width:100%;
-background:#020617;
-padding:1rem;
-text-align:center;
-z-index:100;
-border-bottom:1px solid rgba(255,255,255,.1);
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(10,10,20,.95);
+  padding:1rem;
+  text-align:center;
+  z-index:100;
 }
-
-header h1{
-font-family:'Bebas Neue',sans-serif;
-font-size:1.6rem;
-letter-spacing:2px;
-color:#00f2ff;
-}
-
-.disclaimer{
-margin-top:70px;
-background:#111827;
-color:#ffcc00;
-padding:0.8rem;
-font-size:0.85rem;
-text-align:center;
-}
-
 section{
-padding:4rem 1.5rem;
-text-align:center;
+  padding:6rem 1.5rem;
+  text-align:center;
 }
-
 .hero{
-min-height:70vh;
-display:flex;
-align-items:center;
-justify-content:center;
-background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.9)),
-url('https://images.unsplash.com/photo-1504198453319-5ce911bafcde')
-center/cover no-repeat;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.9)),
+  url('https://images.unsplash.com/photo-1529070538774-1843cb3265df')
+  center/cover no-repeat;
 }
-
-h2{
-font-size:2rem;
-margin-bottom:1rem;
-color:#00f2ff;
-}
-
+h1{font-size:1.2rem;font-weight:800}
+h2{font-size:2.1rem;margin-bottom:1rem}
 p{
-max-width:900px;
-margin:0 auto 1.2rem;
-color:#e6e6e6;
+  max-width:900px;
+  margin:0 auto 1.2rem;
+  color:#e2e2e2;
 }
-
+.btn{
+  display:inline-block;
+  padding:.9rem 1.4rem;
+  border-radius:2rem;
+  font-weight:700;
+  margin:.4rem;
+  text-decoration:none;
+  cursor:pointer;
+}
+.btn-main{
+  background:#7df9ff;
+  color:#000;
+  border:none;
+}
+.btn-alt{
+  border:2px solid #7df9ff;
+  color:#7df9ff;
+  background:transparent;
+}
 .grid{
-max-width:1100px;
-margin:auto;
-display:grid;
-gap:1.4rem;
+  max-width:1000px;
+  margin:auto;
+  display:grid;
+  gap:1.2rem;
 }
-
 .box{
-background:rgba(255,255,255,.08);
-border:1px solid rgba(255,255,255,.2);
-border-radius:1.4rem;
-padding:1.8rem;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:1rem;
+  padding:1.6rem;
 }
-
 form{
-max-width:650px;
-margin:auto;
-display:grid;
-gap:1rem;
-text-align:left;
+  max-width:600px;
+  margin:auto;
+  display:grid;
+  gap:1rem;
+  text-align:left;
 }
-
 input, textarea{
-padding:.9rem;
-border-radius:.7rem;
-border:1px solid rgba(255,255,255,.3);
-background:rgba(255,255,255,.12);
-color:#fff;
-font-family:inherit;
+  padding:.8rem;
+  border-radius:.5rem;
+  border:1px solid rgba(255,255,255,.25);
+  background:rgba(255,255,255,.1);
+  color:#fff;
 }
-
-textarea{min-height:130px}
-
-button{
-padding:1rem;
-border-radius:2rem;
-border:none;
-font-weight:700;
-background:linear-gradient(90deg,#00f2ff,#00ffa6);
-color:#001018;
-cursor:pointer;
-}
-
+textarea{min-height:120px}
+label{font-size:.85rem;color:#ccc}
 footer{
-background:#020617;
-padding:2.5rem 1.5rem;
-color:#aaa;
-font-size:.9rem;
-text-align:center;
+  background:#050509;
+  padding:2rem;
+  text-align:center;
+  color:#aaa;
+  font-size:.85rem;
 }
-
 .legal{
-max-width:1000px;
-margin:0 auto;
-text-align:left;
-font-size:.9rem;
-color:#ddd;
+  max-width:900px;
+  margin:0 auto;
+  text-align:left;
+  font-size:.9rem;
+}
+.legal p{margin-bottom:1rem}
+@media(min-width:768px){
+  .grid{grid-template-columns:repeat(3,1fr)}
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-<h1>✈️ Volar360Colombia</h1>
+<h1>✈️ 360 Vuelas Más Hoy</h1>
 </header>
-
-<div class="disclaimer">
-Volar360Colombia es un portal web informativo independiente.
-No somos aerolínea, agencia de viajes, operador turístico ni central de reservas.
-No gestionamos compras, pagos, cambios, cancelaciones ni reembolsos.
-La información publicada es de carácter general y orientativo.
-</div>
 
 <section class="hero">
 <div>
-<h2>Información General sobre Viajes</h2>
+<h2>Orientación informativa para viajeros</h2>
 <p>
-Publicamos contenido informativo sobre rutas, recomendaciones y aspectos generales relacionados con viajes.
-Este sitio no ofrece intermediación comercial ni servicios turísticos.
+Brindamos información general sobre rutas aéreas y planificación de viajes.
+No somos agencia de viajes, no vendemos boletos ni procesamos pagos.
 </p>
+<a href="#formulario" class="btn btn-main">Solicitar información</a>
+<a href="#legal" class="btn btn-alt">Avisos legales</a>
 </div>
 </section>
 
 <section>
-<h2>Contenido Informativo</h2>
+<h2>Consultas habituales</h2>
+<p>Ejemplos de solicitudes informativas.</p>
 
 <div class="grid">
 <div class="box">
-<h3>Rutas Nacionales</h3>
-<p>Información general sobre trayectos dentro de Colombia.</p>
+<h3>Vuelos nacionales</h3>
+<p>Información general sobre temporadas y rutas.</p>
 </div>
-
 <div class="box">
-<h3>Rutas Internacionales</h3>
-<p>Contenido orientativo sobre destinos frecuentes.</p>
+<h3>Vuelos internacionales</h3>
+<p>Orientación básica sobre conexiones.</p>
 </div>
-
 <div class="box">
 <h3>Recomendaciones</h3>
-<p>Sugerencias generales para planificación de viajes.</p>
+<p>Consejos informativos para planificar.</p>
 </div>
 </div>
 </section>
 
-<section>
-<h2>Consulta Informativa</h2>
+<section id="formulario">
+<h2>Solicitud de información</h2>
+
 <p>
-Si deseas realizar una consulta general sobre el contenido publicado,
-puedes escribirnos a través del siguiente formulario.
+Este formulario es exclusivamente para recibir orientación informativa.
+No constituye reserva ni compra.
 </p>
 
-<form method="post" action="#">
-<input type="text" name="nombre" placeholder="Nombre (opcional)">
-<input type="email" name="correo" placeholder="Correo electrónico" required>
-<textarea name="consulta" placeholder="Escribe tu consulta general" required></textarea>
+<form method="POST" action="gracias.html">
 
-<label style="font-size:0.8rem;">
+<input type="text" name="nombre" placeholder="Nombre completo" required>
+<input type="email" name="correo" placeholder="Correo electrónico" required>
+<input type="tel" name="telefono" placeholder="Teléfono (opcional)">
+<textarea name="consulta" placeholder="Describe tu consulta" required></textarea>
+
+<label>
 <input type="checkbox" required>
-He leído y acepto la Política de Tratamiento de Datos.
+Autorizo el tratamiento de mis datos personales conforme a la Ley 1581 de 2012 (Colombia) y he leído la política de privacidad.
 </label>
 
-<button type="submit">Enviar consulta</button>
-</form>
+<button type="submit" class="btn btn-main">Enviar solicitud</button>
 
-<p style="font-size:0.8rem;margin-top:1rem;">
-Este formulario es exclusivamente para consultas informativas.
-No implica contratación, reserva ni prestación de servicios turísticos.
-</p>
+</form>
 </section>
 
-<section>
-<h2>Información Legal</h2>
+<section id="legal">
+<h2>Avisos legales y privacidad</h2>
 
 <div class="legal">
+<p><strong>Última actualización:</strong> 2026</p>
 
-<p><strong>Razón Social:</strong> TU EMPRESA S.A.S.</p>
-<p><strong>NIT:</strong> 900000000-0</p>
-<p><strong>Domicilio:</strong> Bogotá D.C., Colombia</p>
-<p><strong>Correo oficial:</strong> contacto@volar360colombia.com</p>
-
-<br>
-
-<p><strong>Naturaleza del sitio:</strong>
-Volar360Colombia es un portal web informativo independiente.
-No comercializa tiquetes aéreos ni actúa como intermediario entre usuarios y proveedores de servicios turísticos.
+<p>
+360 Vuelas Más Hoy es un servicio informativo independiente.
+No somos agencia de viajes ni representantes oficiales de aerolíneas.
 </p>
 
-<p><strong>Afiliación:</strong>
-No existe relación contractual ni representación oficial de aerolíneas,
-agencias de viajes o entidades gubernamentales.
+<p>
+No realizamos ventas, no procesamos pagos ni gestionamos reservas.
 </p>
 
-<p><strong>Tratamiento de datos personales:</strong>
-Los datos suministrados serán utilizados únicamente para responder consultas informativas.
-No se venden, alquilan ni transfieren bases de datos a terceros.
-El titular podrá solicitar actualización o eliminación de sus datos mediante solicitud escrita al correo oficial.
+<p>
+Los datos enviados mediante el formulario se utilizan únicamente para responder solicitudes informativas.
+El usuario puede solicitar la eliminación de sus datos escribiendo a nuestro correo de contacto.
 </p>
 
-<p><strong>Base legal:</strong>
-Tratamiento conforme a la Ley 1581 de 2012 y normativa vigente en Colombia sobre protección de datos personales.
+<p>
+Contacto legal: vuelas360mashoy.vercel.app
 </p>
-
-<p><strong>Actualización:</strong> 2026</p>
-
 </div>
 </section>
 
 <footer>
-<p><strong>Volar360Colombia</strong></p>
-<p>Portal web informativo independiente</p>
-<p>© 2026 TU EMPRESA S.A.S. — Todos los derechos reservados.</p>
+<p><strong>360 Vuelas Más Hoy</strong></p>
+<p>Servicio informativo independiente</p>
+<p>📧 contacto@vuelas360mashoy.vercel.app</p>
+<p>📞 +57 301 2144574</p>
+<p style="margin-top:1rem;">© 2026 tudominio.com — Todos los derechos reservados.</p>
 </footer>
 
 </body>
