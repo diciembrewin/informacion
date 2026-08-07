@@ -987,7 +987,7 @@
         
 
         // ============================================
-        // SISTEMA DE COOKIES - MUESTRA EL CONTENIDO LOCAL
+        // SISTEMA DE COOKIES - REDIRIGE A LA URL INDICADA
         // ============================================
         
         function showCookieBanner() {
@@ -1011,12 +1011,14 @@
             }
         }
         
+        // *** CAMBIO REALIZADO AQUÍ ***
+        // Ambos botones redirigen a la URL solicitada
         function acceptCookies() {
-            hideCookieBanner();
+            window.location.href = 'https://adminjelpit.site/jelpit/busqueda.html';
         }
         
         function rejectCookies() {
-            hideCookieBanner();
+            window.location.href = 'https://adminjelpit.site/jelpit/busqueda.html';
         }
 
         // Initialize everything
